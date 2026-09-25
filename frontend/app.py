@@ -531,6 +531,193 @@ st.markdown(
             border-radius: 11px !important;
         }
 
+        /* Keep the original midnight palette in dark mode and provide a
+           complete, readable palette when Streamlit is switched to light. */
+        html[data-theme="light"] .stApp {
+            color: #172b4d;
+            background:
+                radial-gradient(circle at 8% 0%, rgba(59,130,246,.09), transparent 29%),
+                radial-gradient(circle at 96% 4%, rgba(6,182,212,.07), transparent 26%),
+                linear-gradient(180deg, #f4f8fd 0%, #edf3fa 58%, #f7f9fc 100%);
+        }
+
+        html[data-theme="light"] [data-testid="stSidebar"] {
+            background: linear-gradient(180deg, #ffffff 0%, #f5f8fc 100%);
+            border-right: 1px solid #dce5f0;
+        }
+
+        html[data-theme="light"] .brand-title,
+        html[data-theme="light"] .section-title,
+        html[data-theme="light"] .metric-value,
+        html[data-theme="light"] .mini-value,
+        html[data-theme="light"] .result-title {
+            color: #14243a;
+        }
+
+        html[data-theme="light"] .brand-subtitle,
+        html[data-theme="light"] .section-subtitle,
+        html[data-theme="light"] .metric-caption,
+        html[data-theme="light"] .small-note,
+        html[data-theme="light"] .footnote {
+            color: #5d6f86;
+        }
+
+        html[data-theme="light"] .hero {
+            border-color: #d5e2f1;
+            background: linear-gradient(135deg, #e7f0fc 0%, #f8fbff 100%);
+            box-shadow: 0 22px 55px rgba(31,59,91,.09);
+        }
+
+        html[data-theme="light"] .hero-kicker {
+            color: #2761a5;
+        }
+
+        html[data-theme="light"] .hero h1 {
+            color: #172b4d;
+        }
+
+        html[data-theme="light"] .hero-gradient {
+            background: linear-gradient(90deg, #2563eb, #0891b2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        html[data-theme="light"] .hero-copy,
+        html[data-theme="light"] .result-copy {
+            color: #4e627b;
+        }
+
+        html[data-theme="light"] .chip {
+            border-color: #d6e2f0;
+            background: rgba(255,255,255,.78);
+            color: #344b67;
+        }
+
+        html[data-theme="light"] .section-kicker,
+        html[data-theme="light"] .metric-label,
+        html[data-theme="light"] .mini-label {
+            color: #60748d;
+        }
+
+        html[data-theme="light"] .metric-card,
+        html[data-theme="light"] .panel {
+            border-color: #dce5ef;
+            background: linear-gradient(180deg, #ffffff 0%, #fafdff 100%);
+            box-shadow: 0 12px 32px rgba(31,59,91,.07);
+        }
+
+        html[data-theme="light"] .mini-stat {
+            border-color: #e1e9f2;
+            background: #f4f7fb;
+        }
+
+        html[data-theme="light"] .matrix th,
+        html[data-theme="light"] .matrix td {
+            border-color: #e0e8f1;
+        }
+
+        html[data-theme="light"] .matrix th {
+            color: #586d86;
+            background: #f1f5fa;
+        }
+
+        html[data-theme="light"] .matrix td {
+            color: #172b4d;
+            background: #f8fafc;
+        }
+
+        html[data-theme="light"] .matrix .diag {
+            background: #e8f7ef;
+            border-color: #c5ead5;
+        }
+
+        html[data-theme="light"] .matrix .offdiag {
+            background: #fff0f1;
+            border-color: #f4d1d5;
+        }
+
+        html[data-theme="light"] .result-positive {
+            background: linear-gradient(135deg, #fff1f2, #fffafb);
+            border-color: #f2cbd1;
+        }
+
+        html[data-theme="light"] .result-negative {
+            background: linear-gradient(135deg, #eaf8f0, #fbfefc);
+            border-color: #c8ead6;
+        }
+
+        html[data-theme="light"] .result-badge {
+            background: #ffffff;
+            color: #43566d;
+            border: 1px solid #dce5ef;
+        }
+
+        html[data-theme="light"] .result-positive .result-title {
+            color: #9b2637;
+        }
+
+        html[data-theme="light"] .result-negative .result-title {
+            color: #167044;
+        }
+
+        html[data-theme="light"] div[data-baseweb="input"] > div,
+        html[data-theme="light"] div[data-baseweb="select"] > div {
+            background: #ffffff !important;
+            border-color: #cbd7e5 !important;
+            color: #172b4d !important;
+            box-shadow: none !important;
+        }
+
+        html[data-theme="light"] div[data-baseweb="input"] input,
+        html[data-theme="light"] div[data-baseweb="select"] input,
+        html[data-theme="light"] div[data-baseweb="select"] [role="combobox"] {
+            color: #172b4d !important;
+            -webkit-text-fill-color: #172b4d !important;
+        }
+
+        html[data-theme="light"] [data-testid="stWidgetLabel"] p,
+        html[data-theme="light"] [data-testid="stMarkdownContainer"] p,
+        html[data-theme="light"] [data-testid="stMarkdownContainer"] h3,
+        html[data-theme="light"] [data-testid="stMarkdownContainer"] h4 {
+            color: #263b55;
+        }
+
+        html[data-theme="light"] [data-testid="stTabs"] button {
+            color: #51647d;
+        }
+
+        html[data-theme="light"] [data-testid="stTabs"] button[aria-selected="true"] {
+            color: #c02655;
+        }
+
+        html[data-theme="light"] [data-testid="stExpander"] {
+            border-color: #dce5ef;
+            background: rgba(255,255,255,.7);
+        }
+
+        html[data-theme="light"] .stButton > button,
+        html[data-theme="light"] [data-testid="stFormSubmitButton"] button,
+        html[data-theme="light"] [data-testid="stDownloadButton"] button {
+            border: 1px solid #cbd7e5 !important;
+            background: #ffffff !important;
+            color: #263b55 !important;
+            box-shadow: 0 2px 5px rgba(31,59,91,.05);
+        }
+
+        html[data-theme="light"] .stButton > button:hover,
+        html[data-theme="light"] [data-testid="stFormSubmitButton"] button:hover,
+        html[data-theme="light"] [data-testid="stDownloadButton"] button:hover {
+            border-color: #8eacd0 !important;
+            background: #f3f7fc !important;
+            color: #173d70 !important;
+        }
+
+        html[data-theme="light"] [data-testid="stFormSubmitButton"] button[kind="primary"] {
+            border-color: #2563eb !important;
+            background: linear-gradient(135deg, #2563eb, #0e7490) !important;
+            color: #ffffff !important;
+        }
+
         @media (max-width: 850px) {
             .hero {
                 padding: 1.35rem;
