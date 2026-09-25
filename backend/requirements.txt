@@ -8,5 +8,5 @@ joblib
 fastapi
 requests
 
-uvicor[standard]
+uvicorn[standard]
 
